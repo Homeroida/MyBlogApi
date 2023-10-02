@@ -25,5 +25,6 @@ urlpatterns = [
     path('api/', include('blog_api.urls')),
     path('users/', UserCreateView.as_view(), name='user_create'),
     path('login/', obtain_auth_token, name='login'),
+    path('register/', views.register, name='register'),
 
 ]
